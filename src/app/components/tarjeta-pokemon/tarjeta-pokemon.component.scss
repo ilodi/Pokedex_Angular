@@ -1,0 +1,46 @@
+#container{
+    align-items: center;
+    display: flex;
+    position: relative;
+    isolation: isolate;
+    &.seleccionado::before{
+        position: absolute;
+        content: "";
+        width: calc(100% + 8px);
+        height: 120%;
+        left: -4px;
+        background-color: #da4443;
+        z-index: -1;
+        border-radius: 5px;
+    }
+}
+
+#arrow{
+    height: 20px;
+    padding: 0 10px;
+    position: absolute;
+}
+
+#tarjeta{
+    margin-left: 30px;
+    align-items: center;
+    background: #fceab8;
+    border-radius: 25px 5px 5px 25px;
+    cursor: pointer;
+    display: flex;
+    font-size: large;
+    gap: 1rem;
+    padding-left: 5px;
+    width: 90%;
+}
+
+#circulo{
+    aspect-ratio: 1;
+    background-color: rgba(0, 0, 0, 0.125);
+    border-radius: 50%;
+    height: 30px;
+}
+
+img{
+    max-height: 40px;
+}

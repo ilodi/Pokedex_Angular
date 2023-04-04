@@ -1,0 +1,66 @@
+@use "./../assets/styles/var.scss";
+
+header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: linear-gradient(
+            to right,
+            #6188ff,
+            #6188ff 70%,
+            #71a4f3 71%,
+            #71a4f3 97%,
+            #8ec0f0 100%
+        );
+}
+
+#titleContainer{
+    align-items: center;
+    background-color: #88daf2;
+    border-radius: 50px;
+    color: var.$text-white;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 5px;
+    width: 300px;
+    border: solid 3px #30408d;
+    img{
+        width: 40px;
+    }
+    h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 2.5rem;
+        -webkit-text-stroke: 2px #30408d;
+    }
+}
+
+footer{
+    background-color: #619cde;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var.$text-white;
+    a{
+      color: var.$text-white;
+      text-decoration: none;
+    }
+    p{
+      margin: 0 20px;
+    }
+    kbd{
+      display: inline-block;
+      background-color: #6e6b67;
+      border-radius: 50%;
+      width: 26px;
+      line-height: 26px;
+      text-align: center;
+      aspect-ratio: 1;
+      font-size: xx-large;
+      margin:  0 5px;
+    }
+  }
+
+  
